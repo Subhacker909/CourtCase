@@ -1,0 +1,394 @@
+/*----------------ALL COMPONENT---------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline:none;
+}
+
+html{
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    text-rendering: optimizeLegibility;
+    color:#e67e22;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/*-------------------COMMON-------------------*/
+
+.row{
+    max-width:1140px;
+    margin:0 auto;
+}
+
+/*-------------------BACKGROUND-IMAGE + IMAGES + LOGO-------------------*/
+
+.background{
+    width:100%;
+    height:100vh;
+    background-color: aqua;
+    margin:0 auto; 
+
+    
+}
+
+.bg-image{
+    background-image:linear-gradient(45deg, rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url(images/flag.jpg);
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center ;
+
+}
+
+.logo-main{
+    width:100px;
+    float:left;
+    border-radius:200px;
+}
+
+.slider-1{
+    width:500px;
+}
+
+.mySlides{
+    width:100%;
+    height:100%;
+    margin:20% 50%;
+    
+}
+
+/*-------------------FORM-LOGIN-------------------*/
+
+.form-login{
+    width:50%;
+    height:50vh;
+    margin-left:25%;
+    margin-right:25%;
+    position: relative;
+    top:25%;
+    color:rgba(255, 255, 255, 0.89);
+    letter-spacing: 3px;
+    text-transform:uppercase ;
+    
+
+}
+
+.inp-tag{
+    float:right;
+    border:2px solid rgba(255, 166, 0, 0.541);
+    border-radius: 200px;
+    background:rgba(255, 255, 255, 0.89);
+    width:40%;
+    padding:3px;
+    
+}
+
+.login-form{
+    width:100%;
+    margin-bottom: 50px;
+}
+
+input[type="text"]::placeholder{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.logo{
+    background-color: #fff;
+    margin:5px 0 0 10px;
+}
+
+label{
+    position: relative;
+    left:50px;
+}
+
+
+
+/*-------------------BUTTONS-------------------*/
+
+.btn-login{
+    width:100%;
+    padding:5px;
+}
+
+.btn{
+    padding:10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius:200px;
+    background:none;
+    margin-left:22%;
+    color:#fff;
+    background-color: #cf6d17;
+    transition: background-color 0.2s;
+}
+
+
+
+.btn-submit:link,.btn-submit:visited{
+    border:1px solid #e67e22;
+    
+    
+}
+
+.btn-submit:hover,.btn-submit:active{
+    background-color: #cf6d17;
+    
+}
+
+/*-----------------ADMIN-PAGE---------------------*/
+
+.header-main{
+    width:100%;
+    height: 180px;
+    background-color: beige;
+    
+}
+
+.row h2{
+    text-align: center;
+    margin:30px;
+}
+
+
+
+.header-main span{
+    font-size: 12px;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.67);
+}
+
+nav{
+    margin-top: 20px;
+    width:100%;    
+}
+
+.admin-list{
+    width:100%;
+    float:right;
+    list-style: none;
+    
+}
+
+.admin-list li{
+    display:inline-block;
+    margin-left:2%;
+    margin-right: 10%;
+    float: right;
+    
+}
+
+.admin-list li span:link,.admin-list li span:visited{
+    padding:1px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.admin-list li span:hover,.admin-list li span:active{
+    border-bottom: 1px solid rgba(0,0,0,0.67);
+}
+
+
+/*--------------------SIDE-BAR-------------------*/
+.section-imp{
+    width:100%;
+    height:90vh;
+}
+
+.side-bar{
+    width:30%;
+    height:90vh;
+    float:left;
+}
+
+.side-bar-1,.side-bar-2{
+    height:45vh;
+    width:100%;
+}
+
+.side-bar-1{
+    padding:45px;
+}
+
+.list-order li button{
+    padding:4px 4px;
+    border:none;
+    background-color: white;
+    color:rgba(0, 0, 0, 0.6);
+    font-size:100%;     
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.list-order li button:hover,.list-order li button:active{
+    color:crimson;
+}
+
+
+.list-order{
+    text-align: center;
+    
+}
+
+.list-order li{
+    font-size:70%;
+    padding: 10px;
+}
+
+.list-order li a{
+    text-decoration: none;
+    color:#000;
+}
+
+.list-order li a:hover,.list-order li a:active{
+    color:brown;
+}
+
+.main-bar{
+    width:70%;
+    height:90vh;
+    float:right;
+}
+
+/*----------------dropdown--------------------*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left:-400px;
+
+  text-transform: uppercase;
+  height: 280px;
+  background-color: #f9f9f9;
+  width: 800px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0;
+  z-index: 1;
+  
+}
+
+
+.dropdown-content p{
+    font-size:10px;
+    float:left;
+}
+
+.dropdown-content a{
+    font-size: 45%;
+    display:block;
+    color:#000;
+    margin-bottom: 5px;
+    
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+table{width:100%;}
+
+th{
+    font-size:15px;
+    margin-right: 150px;
+    padding:10px;
+    
+}
+
+td{
+    padding:10px;
+}
+
+.login{
+    display: block;
+    padding:0;
+    margin-left:20px;
+    
+}
+
+#login-1{
+    letter-spacing: 3px;     
+    width:150px;
+    height:120px;
+    margin-left: 300px;
+    padding:5px;
+    text-align: center;
+}
+
+#login-1 a{
+    font-size: 10px;
+    color:rgba(0, 0, 0, 0.60);
+    
+}
+
+.cause-list-info{
+    font-size:50%;
+    color:#000;
+    overflow:scroll;
+    width:100%;
+    height:100%;
+    letter-spacing:2px;
+    line-height: 15px;
+    
+}
+
+.judge-info {
+    text-decoration: none;
+    text-align: center;
+    margin-top:10%;
+}
+
+.judge-info a{
+    text-decoration:none;
+    color:rgba(0, 0, 0, 0.60);
+}
+
+.judge-info p{
+    margin:0;
+    margin-top:10%;
+    margin-bottom:10%;
+    line-height: 45px;
+    
+}
+
+.judge-info span{
+    color: aquamarine;
+    
+}
+
+.judge-info a:hover{
+    color:brown;
+}
+
+
+
+/*--------------------FOOTER--------------------*/
+
+footer{
+    width:100%;            
+    padding:30px;
+    background-color: blanchedalmond;
+    text-align: center;
+    
+}
+
+
+
